@@ -1,5 +1,7 @@
-/* container, card, info title links*/
 @import url(variables.css);
+
+/* container, card, info title links*/
+
 
 * {
     margin: 0;
@@ -25,7 +27,8 @@ body {
 .card {
     background: var(--color-grey800);
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    width: 60%;
 }
 
 .info {
@@ -50,4 +53,30 @@ body {
         color: var(--color-green);
         margin-bottom: 20px;
         font-weight: 400;
+    }
+
+.title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: lightgrey;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+    /* applies to a tags that are only direct children within the element with the class 'links' */
+    .links > a {
+        color: var(--color-white);
+        background: var(--color-grey700);
+        width: 100%;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 8px;
+        font-weight: 500;
     }
